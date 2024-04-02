@@ -1,0 +1,128 @@
+{% macro section_post(pages) %}
+    <section>
+        {%- if section.title == "grid" %}
+            <div class="grid">
+            <div class="grid_items">
+            {%- for page in pages | reverse %}
+                <div class="grid_item">
+                    {%- if page.extra.thumb %}
+                    <a href={{ page.permalink }}><img class="grid_thumb" alt={{ page.extra.thumb }} src="{{ page.extra.thumb }}">
+                    <div class="btn_more">+</i></div>
+                    </a>
+                    {% endif %}
+                    
+                </div>
+            {% endfor %}
+            </div>
+            </div>
+            
+            {% else %}
+            <div class="journal">
+            <div class="articles">
+            {%- for page in pages %}
+                <div class="article">
+                    <div class="title"><a href={{ page.permalink }}>{{page.title}}</a></div>
+                    <div class="description">
+                        {% if page.description %}
+                            {{ page.description }}
+                        {% endif %}
+                    </div>
+                    <div class="meta">
+                        {% if page.draft %}
+                            <span class="draft_label">DRAFT</span>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor -%}
+            </div>
+            </div>
+        {% endif %}
+    </section>
+{% endmacro section_post %}
+
+
+
+{% macro page_header(title) %}
+    <div class="page_header">
+        <div class="title">{{ title }}</div>
+        {% if page.extra.subtitle %}
+        <div class="subtitle">{{ page.extra.subtitle }}</div>
+        {% endif %}
+    </div>
+{% endmacro page_header %}
+
+
+{% macro page_template(content) %}
+    <div class="page_title">
+        {{ work_macros::page_header(title=page.title) }}
+        
+        {% if page.draft %}
+        <div class="meta">
+            <span class="draft_label">DRAFT</span>
+        </div>
+        {% endif %}
+    </div>
+    
+    <div class="page_content">
+        {{ page.content | safe }}
+    </div>
+    
+    {% if page.extra.credits %}
+    <div class="page_credits">
+        <div class="credits_heading">
+            --- CREDITS ----------------
+        </div>
+        <p class="credits_text">
+        {% for item in page.extra.credits %}
+            {% if item.type == "section" %}
+               {{ item.name }}</br>
+            {% elif item.type == "title" %}
+                {{ item.name }} : 
+            {% elif item.type == "notar"  %}
+                <a href={{ item.url }}>{{ item.name }}</a>,
+            {% elif item.type == "lastnotar" %}
+                <a href={{ item.url }}>{{ item.name }}</a>
+                </br>
+            {% elif item.type == "last" %}
+                <a href={{ item.url }} target="_blank">{{ item.name }}</a>
+                </br>
+            {% else %}
+            <a href={{ item.url }} target="_blank">{{ item.name }}</a>,
+            {% endif %}
+        {% endfor %}
+        </p>
+    </div>
+    {% endif %}
+{% endmacro page_template %}
+
+
+{% macro content(page) %}
+<main>
+    <article>
+        {% if page.extra.page_type %}
+            
+            {% if page.extra.page_type == 'project' %}
+            <div class="page_project">
+            {{ work_macros::page_template(content=page.content) }}
+            </div>
+            {% endif %}
+            
+            {% if page.extra.page_type == 'blog' %}
+            <div class="page_blog">
+            {{ work_macros::page_template(content=page.content) }}
+            </div>
+            {% endif %}
+        
+            {% else %}
+        {{ work_macros::page_template(content=page.content) }}
+        {% endif %}
+
+    </article>
+</main>
+{% endmacro content %}
+
+
+
+
+
+       

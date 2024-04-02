@@ -1,0 +1,156 @@
+.grid {
+
+    &_items {
+        columns: 1;
+        column-gap: 0px;
+        line-height: 0;
+    }
+
+    &_item {
+        position: relative;
+        
+        img, video {
+            width: 100%;
+            height: auto;
+            break-inside: avoid;
+        }
+        
+        &:hover {
+            filter: brightness(60%) ;
+        }
+    }
+    
+    .btn_more {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        font-size: 0;
+        font-weight: 10;
+        
+        &:hover {
+            font-size: 12rem;
+            filter: brightness(180%) ;
+        }
+    }
+}
+
+
+.title {
+    font-size: 50px;
+    font-weight: 10;
+    line-height: 1;
+    letter-spacing: 15px;
+    padding-right: 60%;
+    
+    .description {
+    }
+        
+    .meta {
+        font-size: 30%;
+    }
+}
+
+.subtitle {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+    
+
+.hrule {
+    background: $sec-col;
+    width: 100%;
+    height: 1.3px;
+    margin-bottom: 6px;
+}
+
+
+.page {
+
+    &_blog {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    
+    &_content {
+        position: relative;
+        top: 30px;
+        padding-bottom: 60px;
+    }
+
+    &_text {
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    &_heading {
+        font-weight: normal;
+        line-height: 0.5;
+        letter-spacing: 15px;
+    }
+    
+    &_subheading {
+        font-weight: normal;
+        line-height: 2;
+        letter-spacing: 15px;
+    }
+
+
+
+}
+
+
+.mwall {
+    position: relative;
+    padding-bottom: 60px;
+    
+    &_items {
+        columns: 1;
+        column-gap: 0px;
+        line-height: 0;
+        
+        img, video {
+            height: auto;
+            width: 100%;
+            break-inside: avoid;
+        }
+    }
+}
+
+
+.credits {
+    
+    &_heading {
+        letter-spacing: 15px;
+        padding-bottom: -3px;
+    }
+
+    &_text {
+        color: adjust-color($sec-col, $lightness: 20%);
+    }
+}
+
+
+.journal {
+    columns: 1;
+    column-gap: 0;
+    
+    .articles {
+        display: grid;
+        
+        .article {
+            break-inside: avoid;
+
+            .description {
+                position: relative;
+                top: -15px;
+
+            }
+        }
+    }
+}
+

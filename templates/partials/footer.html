@@ -1,0 +1,42 @@
+
+<footer>
+     <info>
+        <div class="info">
+        {% for item in config.extra.footer %}
+        {% if item.order == "first" %}
+            {% if item.type == "email" %}
+                <div><a href="mailto:{{ item.name }}">{{ item.name }}</a></div>
+            {% else %}
+                <div><a href={{ config.base_url }}>{{ item.name }}</a></div>
+            {% endif %}
+        {% else %}
+            <div><a href={{ get_url(path='@/contact.md') }}>{{ item.name }}</a></div>
+        {% endif %}
+        {% endfor %}
+        </div>
+    </info>
+       
+    <div class="divider">|</div>
+    
+    <nav>
+        <div class="menu">
+            {% for menu in config.extra.menu %}
+            {% if menu.icon %} 
+            <a href={{ menu.url }}><i class="{{ menu.icon }}"></i></a>
+            {% elif menu.svg %}
+            <a href={{ menu.url }}><img alt="{{ menu.name }}" src="{{ menu.svg }}"></a>
+            {% endif %}
+            {% endfor %}
+            {% for social in config.extra.socials %}
+            {% if social.icon %} 
+            <a href={{ social.url }} target="_blank"><i class="{{ social.icon }}"></i></a>
+            {% elif social.svg %}
+            <a href={{ social.url }} target="_blank"><img alt="{{ scial.name }}" src="{{ social.svg }}"></a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </nav>
+
+</footer>
+
+

@@ -1,0 +1,37 @@
+{% import "macros/macros.html" as work_macros %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# site title #}
+    {% set current_path = current_path | default(value="/") %}
+    {% if current_path == "/" %}
+    <title>
+        {{ config.title | default(value="work") }}
+    </title>
+    {% else %}
+    <title>
+        {{ page.title | default(value=config.title) | default(value="work") }}
+    </title>
+    {% endif %}
+
+    
+    {# Favicon #}
+    {% for brand in config.extra.brand %}
+        <link rel="icon" type="image/png" href={{ brand.url }}>
+    {% endfor %}
+
+    
+    {# CSS #}
+    {% for style in config.extra.styles %}
+        <link rel="stylesheet" type="text/css" href={{ style.url }}>
+    {% endfor %}
+
+
+    {# scripts #}
+    {% for script in config.extra.scripts %}
+        <script src={{ script.url }}></script>
+    {% endfor %}
+</head>

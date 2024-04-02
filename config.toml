@@ -1,0 +1,60 @@
+
+base_url = "https://www.danezmotion.com/"
+title = "DANIEL ALVAREZ"
+compile_sass = true
+build_search_index = true
+taxonomies = [
+    { name = "client",   feed = true }, 
+    { name = "studio",   feed = true }, 
+    { name = "director", feed = true }, 
+    { name = "producer", feed = true }, 
+    { name = "visuals",  feed = true }, 
+    { name = "music",    feed = true }, 
+    { name = "others",   feed = true },
+] 
+
+[markdown]
+highlight_code = true
+highlight_theme = "gruvbox-dark"
+
+[extra]
+subtitle = "------------>>> MOTION DESIGNER <<<------------"
+
+brand = [
+    { name = "logo", url = "/imgs/LOGO_RGBA_110x110.png" }
+]
+
+home = "projects/_index.md"
+
+menu = [
+    { name = "projects", url = "/projects", icon = "fa-solid fa-play" },
+    { name = "contact",  url = "/contact",  icon = "fa-solid fa-id-card" },
+]
+
+socials = [
+    { name = "intagram", url = "https://www.instagram.com/danezmotion",   icon = "fa-brands fa-instagram" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/danezmotion", icon = "fa-brands fa-linkedin"  },
+]
+
+footer = [
+    { name = "dan@danezmotion.com", type = "email", order = "first"       },
+]
+
+styles = [
+    { name = "default", url = "/main.css" }
+]
+
+scripts = [
+    { name = "fontawesome", url = "https://kit.fontawesome.com/3e79c5bdad.js" },
+    { name = "js",          url = "/js/main.js" },
+]
+
+unused = [
+    { name = "projects", url = "/projects", icon = "fa-solid fa-video" },
+    { name = "github",   url = "https://www.github.com/danezmotion",    icon = "fa-brands fa-github" },
+    { name = "contact", url = "/contact", weight = 1, icon = "fa-solid fa-id-card" },
+    { name = "lab",     url = "/lab",     weight = 2, icon = "fa-solid fa-flask" },
+    { name = "blog",    url = "/blog",    weight = 3, icon = "fa-solid fa-paragraph" },
+    { name = "work",    url = "/work",    weight = 1, svg  = "/imgs/LOGO_RGBA_110x110.png" },
+]
+
