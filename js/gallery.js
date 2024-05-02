@@ -29,6 +29,7 @@ for(let i = 1; i < media.length; i++) {
         studio: ">>> " + sort[imageIndex].studio,
         link: sort[imageIndex].link,
         src: sort[imageIndex].src,
+        //srcset: sort[imageIndex].srcset,
     }
     posts.push(item);
     imageIndex++;
@@ -52,9 +53,9 @@ const createCard = (index) => {
     let image = document.createElement('img');
     image.loading = "lazy";
     image.role = "img";
-    image.srcset = "";
     image.alt = "";
     image.src = posts[sort].src;
+    //image.srcset = posts[sort].srcset;
 
     let cover = document.createElement('div');
     cover.id = 'card-cover';
