@@ -1242,7 +1242,7 @@ const media = [
 {
     "name":"FEATURED_STILL_1920_SHOT_010_maze_3D.0200.webp",
     "project":"PT24002_DAN_mazeGen",
-    "title":"maze",
+    "title":"MAZE",
     "studio":"DAN",
     "link":"pt24002-dan-mazegen",
     "src":"https://www.dropbox.com/scl/fi/5ektvicodi98jzpwlsmx2/FEATURED_STILL_1920_SHOT_010_maze_3D.0200.webp?rlkey=jxvzvxvj4l5ntli5boxdfju4y&raw=1"
@@ -1250,7 +1250,7 @@ const media = [
 {
     "name":"FEATURED_STILL_1920_SHOT_020_maze_2D.0200.webp",
     "project":"PT24002_DAN_mazeGen",
-    "title":"maze",
+    "title":"MAZE",
     "studio":"DAN",
     "link":"pt24002-dan-mazegen",
     "src":"https://www.dropbox.com/scl/fi/hyhur96cwywrfi9lsaswh/FEATURED_STILL_1920_SHOT_020_maze_2D.0200.webp?rlkey=gi58410pg4z6tii1l7sbr67zo&raw=1"
@@ -1258,7 +1258,7 @@ const media = [
 {
     "name":"FEATURED_STILL_1920_SHOT_020_maze_3D.0200.webp",
     "project":"PT24002_DAN_mazeGen",
-    "title":"maze",
+    "title":"MAZE",
     "studio":"DAN",
     "link":"pt24002-dan-mazegen",
     "src":"https://www.dropbox.com/scl/fi/vli1p8k88wyggg8rj0jz4/FEATURED_STILL_1920_SHOT_020_maze_3D.0200.webp?rlkey=uii04cqis428nqfh7juhetphm&raw=1"
@@ -1266,7 +1266,7 @@ const media = [
 {
     "name":"FEATURED_STILL_1920_SHOT_020_wireframe_maze_3D.0200.webp",
     "project":"PT24002_DAN_mazeGen",
-    "title":"maze",
+    "title":"MAZE",
     "studio":"DAN",
     "link":"pt24002-dan-mazegen",
     "src":"https://www.dropbox.com/scl/fi/nlajk3qbrjga6djz4px8w/FEATURED_STILL_1920_SHOT_020_wireframe_maze_3D.0200.webp?rlkey=1ar39qm4nk40mz0mlwgkmj7ks&raw=1"
@@ -1274,7 +1274,7 @@ const media = [
 {
     "name":"FEATURED_STILL_1920_SHOT_030_maze_2D.0100.webp",
     "project":"PT24002_DAN_mazeGen",
-    "title":"maze",
+    "title":"MAZE",
     "studio":"DAN",
     "link":"pt24002-dan-mazegen",
     "src":"https://www.dropbox.com/scl/fi/x7uldpv4s2i86f449bxcq/FEATURED_STILL_1920_SHOT_030_maze_2D.0100.webp?rlkey=ju2kok31w7foyris18bxinlj0&raw=1"
@@ -1282,7 +1282,7 @@ const media = [
 {
     "name":"FEATURED_STILL_1920_SHOT_030_maze_3D.0200.webp",
     "project":"PT24002_DAN_mazeGen",
-    "title":"maze",
+    "title":"MAZE",
     "studio":"DAN",
     "link":"pt24002-dan-mazegen",
     "src":"https://www.dropbox.com/scl/fi/gob317bwlrqf2f2j4rent/FEATURED_STILL_1920_SHOT_030_maze_3D.0200.webp?rlkey=d6tcnhg4h6wp7p1ps0xedzm6o&raw=1"
@@ -1290,7 +1290,7 @@ const media = [
 {
     "name":"FEATURED_STILL_1920_SHOT_030_wireframe_maze_3D.0200.webp",
     "project":"PT24002_DAN_mazeGen",
-    "title":"maze",
+    "title":"MAZE",
     "studio":"DAN",
     "link":"pt24002-dan-mazegen",
     "src":"https://www.dropbox.com/scl/fi/kb4kqm7wub6jtedgxw210/FEATURED_STILL_1920_SHOT_030_wireframe_maze_3D.0200.webp?rlkey=u8gbu96ea6soi4q8hmhkbc1fy&raw=1"
