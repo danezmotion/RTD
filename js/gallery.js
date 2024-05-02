@@ -2,7 +2,7 @@
 const container = document.getElementById('container');
 const loader = document.getElementById('loader');
 const postLimit = media.length;
-const postIncrease = 60;
+const postIncrease = 30;
 
 const pageCount = Math.ceil(postLimit / postIncrease);
 let currentPage = 1;
