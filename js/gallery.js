@@ -61,7 +61,7 @@ const createCard = (index) => {
     let subTitle = document.createElement('h3');
     subTitle.classList.add('card-subTitle');
     subTitle.classList.add('text-secondary-dark-3');
-    subTitle.innerText = media[index].studio;
+    subTitle.innerText = '>>> ' + media[index].studio;
 
     bg.append(image);
     cover.append(title, subTitle);
