@@ -1,42 +1,50 @@
-
-// ATTRIBS
+// gallery Attribs
 const container = document.getElementById('container');
+const loader = document.getElementById('loader');
+const postLimit = media.length;
+const postIncrease = 18;
 
-let cardLimit = 0;
-for( let i = 1; i < media.length; i++ ) {
-    cardLimit++;
-    if(cardLimit > media.length - 1) cardLimit = 0;
-}
-
-const postIncrease = Math.ceil(cardLimit / 3);
-const pageCount = Math.ceil(cardLimit / postIncrease);
+const pageCount = Math.ceil(postLimit / postIncrease);
 let currentPage = 1;
 
 
-// CREATE CONTAINER
+
+// Create Container
 let gridContainer = document.createElement('div');
 gridContainer.id = ('gallery');
 gridContainer.classList.add('grid');
 
+// sort posts
+let posts = [];
+let imageIndex = 0;
 
-// SHUFFLE MEDIA
-function shuffle(array) {
-    let index = array.length;
-    while (index != 0) {
-        let rand = Math.ceil(Math.random() * cardLimit);
-        index--;
-        [array[index], array[rand]] = [
-            array[rand], array[index]];
+let rev_media = media.map((e,i,a) => a[(a.length -1) -i]);
+
+let sort = media
+
+for(let i = 1; i < media.length; i++) {
+    let item = {
+        id: i,
+        title: sort[imageIndex].title,
+        studio: ">>> " + sort[imageIndex].studio,
+        link: sort[imageIndex].link,
+        src: sort[imageIndex].src,
+        //srcset: sort[imageIndex].srcset,
     }
+    posts.push(item);
+    imageIndex++;
+    if(imageIndex > media.length - 1) imageIndex = 0;
 }
-shuffle(media);
 
 const createCard = (index) => {
+    
+    let rand = Math.floor(Math.random() * postLimit);
+    let sort = index;
     
     let card = document.createElement('a');
     card.id = 'gallery-item';
     card.classList = 'card';
-    card.href = media[index].link;
+    card.href = posts[index].link;
 
     let bg = document.createElement('div');
     bg.id = 'gallery-image';
@@ -46,8 +54,8 @@ const createCard = (index) => {
     image.loading = "lazy";
     image.role = "img";
     image.alt = "";
-    image.src = media[index].src;
-    //image.srcset = media[index].srcset;
+    image.src = posts[sort].src;
+    //image.srcset = posts[sort].srcset;
 
     let cover = document.createElement('div');
     cover.id = 'card-cover';
@@ -56,12 +64,12 @@ const createCard = (index) => {
     let title = document.createElement('h2');
     title.classList.add('card-title');
     title.classList.add('text-secondary');
-    title.innerText = media[index].title;
+    title.innerText = posts[sort].title;
     
     let subTitle = document.createElement('h3');
     subTitle.classList.add('card-subTitle');
     subTitle.classList.add('text-secondary-dark-3');
-    subTitle.innerText = media[index].studio;
+    subTitle.innerText = posts[sort].studio;
 
     bg.append(image);
     cover.append(title, subTitle);
@@ -76,7 +84,7 @@ const addPost = (pageIndex) => {
     currentPage = pageIndex;
 
     const startRange = (pageIndex - 1) * postIncrease;
-    const endRange = currentPage == pageCount ? cardLimit : pageIndex * postIncrease;
+    const endRange = currentPage == pageCount ? postLimit : pageIndex * postIncrease;
 
     for( let i = startRange + 1; i <= endRange; i++ ){
         createCard(i);
