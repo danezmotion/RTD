@@ -17,18 +17,18 @@
 
     <body>
         <nav id="navbar-top" class="pt-3 pb-1">
-    <div class="site-title"><a href="/">DANIEL ALVAREZ</a></div>
+    <div class="site-title"><a class="not-blank" href="/">DANIEL ALVAREZ</a></div>
     <div class="site-subtitle">----- MOTION DESIGNER -----</div>
 </nav>
 
         <nav id="navbar-bottom">
-    <div class="email"><a href='mailto:dan@danezmotion.com'>dan@danezmotion.com</a></div>
+    <div class="email"><a class="no-blank" href='mailto:dan@danezmotion.com'>dan@danezmotion.com</a></div>
     <div class="menu display-f">
         <a href="/"><i class="fa-solid fa-play"></i></a>
 <!--
         <a href="contact"><i class="fa-solid fa-id-card"></i></a>
 -->
-        <a href="https://www.instagram.com/danezmotion" target="_black"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/danezmotion" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/danezmotion" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
 </nav>
@@ -39,22 +39,26 @@
                     <div class="page-section">
 <div id="page-media" class="page-media">
 <div id="page-gallery" class="page-grid" style="grid-template-columns: repeat(1, auto)">
-<div id="page-gallery" class="page-grid"><img loading="lazy" role="img" alt="" src="https://www.dropbox.com/s/dhjjzic784pybg7/RENDER_legos_highRes.png?raw=1"></div>
-<div id="page-gallery" class="page-grid"><img loading="lazy" role="img" alt="" src="https://www.dropbox.com/s/c3rny0tavh9vynx/RENDER_legos_midRes.png?raw=1"></div>
-<div id="page-gallery" class="page-grid"><img loading="lazy" role="img" alt="" src="https://www.dropbox.com/s/99lh9w9xm57rykz/RENDER_legos_lowRes.png?raw=1"></div>
+<div id="gallery-item" class="page-card"><img loading="lazy" role="img" alt="" src="https://www.dropbox.com/s/dhjjzic784pybg7/RENDER_legos_highRes.png?raw=1"></div>
+<div id="gallery-item" class="page-card"><img loading="lazy" role="img" alt="" src="https://www.dropbox.com/s/c3rny0tavh9vynx/RENDER_legos_midRes.png?raw=1"></div>
+<div id="gallery-item" class="page-card"><img loading="lazy" role="img" alt="" src="https://www.dropbox.com/s/99lh9w9xm57rykz/RENDER_legos_lowRes.png?raw=1"></div>
 </div>
+<div class="page-subheading">--- FINAL OUTPUT --------------</div>
 </div>
 <div class='page-details'>
+<div class='page-heading'>
 <div class='page-title'>VOXELS</div>
+<div class='page-subtitle'>SIDE FX HOUDINI | REDSHIFT</div>
+</div>
 <div class='page-content'>
-<p>This project was used as an exploration on how to create voxel art.</p>
-<p>I used SideFX Houdini and Redshift instancing to build a system to increase or reduce the resolution of the voxels. But, keeping render times low. </p>
+<p>Taking advantage of Redshift's instancing capabilities, I was able to build a system to increase or reduce the density of a volume. And, presented as solid colored geometry. </p>
 </div>
 </div>
 </div>
 
                 </div>
             </div>
+            <script src="/js/utilities.js"></script>
         </content>
     </body>
 </html>
