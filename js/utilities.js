@@ -4,10 +4,10 @@ let video = document.getElementsByTagName('video');
 
 for(let i = 0; i < video.length; i++) {
     video[i].controls = false;
+    video[i].muted = true;
     
     video[i].onloadstart = function() {
         video[i].autoplay = true;
-        video[i].muted = true;
     };
     
     video[i].onmouseover = function() {
