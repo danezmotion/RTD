@@ -12,8 +12,6 @@ for(let i = 0; i < video.length; i++) {
     
     video[i].onmouseover = function() {
         video[i].controls = true;
-        video[i].muted = false;
-        video[i].volume = 0.5;
     };
 
     video[i].onmouseout = function() {
