@@ -10,6 +10,8 @@ for(let i = 0; i < video.length; i++) {
     video[i].onmouseout = function() {
         video[i].controls = false;
     };
+    video[i].autoplay = true;
+    video[i].muted = true;
 };
 
 
@@ -22,4 +24,4 @@ for(let i = 0; i < anchor.length; i++) {
     }
 }
 
-//console.log(anchor)
+//console.log(video)
