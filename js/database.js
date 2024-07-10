@@ -312,62 +312,6 @@ const media = [
     "src":"images/projects/PT19013_DAN_crownSplash/FEATURED_STILL_1920_crownSplash_red.webp"
 },
 {
-    "name":"FEATURED_STILL_1920_SHOT_020_maze_2D.0200.webp",
-    "project":"PT24002_DAN_mazeGen",
-    "title":"MAZE",
-    "studio":"DAN",
-    "link":"pt24002-dan-mazegen",
-    "src":"images/projects/PT24002_DAN_mazeGen/FEATURED_STILL_1920_SHOT_020_maze_2D.0200.webp"
-},
-{
-    "name":"FEATURED_STILL_1920_SHOT_030_maze_2D.0100.webp",
-    "project":"PT24002_DAN_mazeGen",
-    "title":"MAZE",
-    "studio":"DAN",
-    "link":"pt24002-dan-mazegen",
-    "src":"images/projects/PT24002_DAN_mazeGen/FEATURED_STILL_1920_SHOT_030_maze_2D.0100.webp"
-},
-{
-    "name":"FEATURED_STILL_1920_SHOT_010_maze_3D.0200.webp",
-    "project":"PT24002_DAN_mazeGen",
-    "title":"MAZE",
-    "studio":"DAN",
-    "link":"pt24002-dan-mazegen",
-    "src":"images/projects/PT24002_DAN_mazeGen/FEATURED_STILL_1920_SHOT_010_maze_3D.0200.webp"
-},
-{
-    "name":"FEATURED_STILL_1920_SHOT_020_maze_3D.0200.webp",
-    "project":"PT24002_DAN_mazeGen",
-    "title":"MAZE",
-    "studio":"DAN",
-    "link":"pt24002-dan-mazegen",
-    "src":"images/projects/PT24002_DAN_mazeGen/FEATURED_STILL_1920_SHOT_020_maze_3D.0200.webp"
-},
-{
-    "name":"FEATURED_STILL_1920_SHOT_020_wireframe_maze_3D.0200.webp",
-    "project":"PT24002_DAN_mazeGen",
-    "title":"MAZE",
-    "studio":"DAN",
-    "link":"pt24002-dan-mazegen",
-    "src":"images/projects/PT24002_DAN_mazeGen/FEATURED_STILL_1920_SHOT_020_wireframe_maze_3D.0200.webp"
-},
-{
-    "name":"FEATURED_STILL_1920_SHOT_030_maze_3D.0200.webp",
-    "project":"PT24002_DAN_mazeGen",
-    "title":"MAZE",
-    "studio":"DAN",
-    "link":"pt24002-dan-mazegen",
-    "src":"images/projects/PT24002_DAN_mazeGen/FEATURED_STILL_1920_SHOT_030_maze_3D.0200.webp"
-},
-{
-    "name":"FEATURED_STILL_1920_SHOT_030_wireframe_maze_3D.0200.webp",
-    "project":"PT24002_DAN_mazeGen",
-    "title":"MAZE",
-    "studio":"DAN",
-    "link":"pt24002-dan-mazegen",
-    "src":"images/projects/PT24002_DAN_mazeGen/FEATURED_STILL_1920_SHOT_030_wireframe_maze_3D.0200.webp"
-},
-{
     "name":"FEATURED_STILL_1920_precision.001.webp",
     "project":"PT19021_BB_DNAsequence",
     "title":"PRECISION",
@@ -1232,67 +1176,83 @@ const media = [
     "src":"images/projects/PT17008_GIRR_tencentSports/FEATURED_STILL_1920_tenSpo_007.webp"
 },
 {
+    "name":"FEATURED_STILL_1920_SHOT_030.1124.webp",
+    "project":"PT24003_DAN_kaleidoFlower",
+    "title":"KALEIDO FLOWER",
+    "studio":"DAN",
+    "link":"pt24003-dan-kaleidoflower",
+    "src":"images/projects/PT24003_DAN_kaleidoFlower/FEATURED_STILL_1920_SHOT_030.1124.webp"
+},
+{
+    "name":"FEATURED_STILL_1920_SHOT_020.1090.webp",
+    "project":"PT24003_DAN_kaleidoFlower",
+    "title":"KALEIDO FLOWER",
+    "studio":"DAN",
+    "link":"pt24003-dan-kaleidoflower",
+    "src":"images/projects/PT24003_DAN_kaleidoFlower/FEATURED_STILL_1920_SHOT_020.1090.webp"
+},
+{
     "name":"FEATURED_STILL_1920_01_wall_v006.webp",
-    "project":"PT23007_BEMO_msgSphere",
-    "title":"MSG SPHERE LAUNCH",
+    "project":"PT23007_BEMO_hologramInstallation",
+    "title":"HOLOGRAM INSTALLATION CONTENT",
     "studio":"BEMO",
-    "link":"pt23007-bemo-msgsphere",
-    "src":"images/projects/PT23007_BEMO_msgSphere/FEATURED_STILL_1920_01_wall_v006.webp"
+    "link":"pt23007-bemo-holograminstallation",
+    "src":"images/projects/PT23007_BEMO_hologramInstallation/FEATURED_STILL_1920_01_wall_v006.webp"
 },
 {
     "name":"FEATURED_STILL_1920_02_areaOfSphere_v004.webp",
-    "project":"PT23007_BEMO_msgSphere",
-    "title":"MSG SPHERE LAUNCH",
+    "project":"PT23007_BEMO_hologramInstallation",
+    "title":"HOLOGRAM INSTALLATION CONTENT",
     "studio":"BEMO",
-    "link":"pt23007-bemo-msgsphere",
-    "src":"images/projects/PT23007_BEMO_msgSphere/FEATURED_STILL_1920_02_areaOfSphere_v004.webp"
+    "link":"pt23007-bemo-holograminstallation",
+    "src":"images/projects/PT23007_BEMO_hologramInstallation/FEATURED_STILL_1920_02_areaOfSphere_v004.webp"
 },
 {
     "name":"FEATURED_STILL_1920_04_geodesicMath_v006.webp",
-    "project":"PT23007_BEMO_msgSphere",
-    "title":"MSG SPHERE LAUNCH",
+    "project":"PT23007_BEMO_hologramInstallation",
+    "title":"HOLOGRAM INSTALLATION CONTENT",
     "studio":"BEMO",
-    "link":"pt23007-bemo-msgsphere",
-    "src":"images/projects/PT23007_BEMO_msgSphere/FEATURED_STILL_1920_04_geodesicMath_v006.webp"
+    "link":"pt23007-bemo-holograminstallation",
+    "src":"images/projects/PT23007_BEMO_hologramInstallation/FEATURED_STILL_1920_04_geodesicMath_v006.webp"
 },
 {
     "name":"FEATURED_STILL_1920_06_pi_v005.webp",
-    "project":"PT23007_BEMO_msgSphere",
-    "title":"MSG SPHERE LAUNCH",
+    "project":"PT23007_BEMO_hologramInstallation",
+    "title":"HOLOGRAM INSTALLATION CONTENT",
     "studio":"BEMO",
-    "link":"pt23007-bemo-msgsphere",
-    "src":"images/projects/PT23007_BEMO_msgSphere/FEATURED_STILL_1920_06_pi_v005.webp"
+    "link":"pt23007-bemo-holograminstallation",
+    "src":"images/projects/PT23007_BEMO_hologramInstallation/FEATURED_STILL_1920_06_pi_v005.webp"
 },
 {
     "name":"FEATURED_STILL_1920_STYLEFREME_03_finiteElementMethod.webp",
-    "project":"PT23007_BEMO_msgSphere",
-    "title":"MSG SPHERE LAUNCH",
+    "project":"PT23007_BEMO_hologramInstallation",
+    "title":"HOLOGRAM INSTALLATION CONTENT",
     "studio":"BEMO",
-    "link":"pt23007-bemo-msgsphere",
-    "src":"images/projects/PT23007_BEMO_msgSphere/FEATURED_STILL_1920_STYLEFREME_03_finiteElementMethod.webp"
+    "link":"pt23007-bemo-holograminstallation",
+    "src":"images/projects/PT23007_BEMO_hologramInstallation/FEATURED_STILL_1920_STYLEFREME_03_finiteElementMethod.webp"
 },
 {
     "name":"FEATURED_STILL_1920_STYLEFREME_07_snellsLaw.webp",
-    "project":"PT23007_BEMO_msgSphere",
-    "title":"MSG SPHERE LAUNCH",
+    "project":"PT23007_BEMO_hologramInstallation",
+    "title":"HOLOGRAM INSTALLATION CONTENT",
     "studio":"BEMO",
-    "link":"pt23007-bemo-msgsphere",
-    "src":"images/projects/PT23007_BEMO_msgSphere/FEATURED_STILL_1920_STYLEFREME_07_snellsLaw.webp"
+    "link":"pt23007-bemo-holograminstallation",
+    "src":"images/projects/PT23007_BEMO_hologramInstallation/FEATURED_STILL_1920_STYLEFREME_07_snellsLaw.webp"
 },
 {
     "name":"FEATURED_STILL_1920_07_snellsLaw_v005.webp",
-    "project":"PT23007_BEMO_msgSphere",
-    "title":"MSG SPHERE LAUNCH",
+    "project":"PT23007_BEMO_hologramInstallation",
+    "title":"HOLOGRAM INSTALLATION CONTENT",
     "studio":"BEMO",
-    "link":"pt23007-bemo-msgsphere",
-    "src":"images/projects/PT23007_BEMO_msgSphere/FEATURED_STILL_1920_07_snellsLaw_v005.webp"
+    "link":"pt23007-bemo-holograminstallation",
+    "src":"images/projects/PT23007_BEMO_hologramInstallation/FEATURED_STILL_1920_07_snellsLaw_v005.webp"
 },
 {
     "name":"FEATURED_STILL_1920_10_laplacian_v003.webp",
-    "project":"PT23007_BEMO_msgSphere",
-    "title":"MSG SPHERE LAUNCH",
+    "project":"PT23007_BEMO_hologramInstallation",
+    "title":"HOLOGRAM INSTALLATION CONTENT",
     "studio":"BEMO",
-    "link":"pt23007-bemo-msgsphere",
-    "src":"images/projects/PT23007_BEMO_msgSphere/FEATURED_STILL_1920_10_laplacian_v003.webp"
+    "link":"pt23007-bemo-holograminstallation",
+    "src":"images/projects/PT23007_BEMO_hologramInstallation/FEATURED_STILL_1920_10_laplacian_v003.webp"
 },
 ]
