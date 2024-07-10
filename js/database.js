@@ -1176,22 +1176,6 @@ const media = [
     "src":"images/projects/PT17008_GIRR_tencentSports/FEATURED_STILL_1920_tenSpo_007.webp"
 },
 {
-    "name":"FEATURED_STILL_1920_SHOT_030.1124.webp",
-    "project":"PT24003_DAN_kaleidoFlower",
-    "title":"KALEIDO FLOWER",
-    "studio":"DAN",
-    "link":"pt24003-dan-kaleidoflower",
-    "src":"images/projects/PT24003_DAN_kaleidoFlower/FEATURED_STILL_1920_SHOT_030.1124.webp"
-},
-{
-    "name":"FEATURED_STILL_1920_SHOT_020.1090.webp",
-    "project":"PT24003_DAN_kaleidoFlower",
-    "title":"KALEIDO FLOWER",
-    "studio":"DAN",
-    "link":"pt24003-dan-kaleidoflower",
-    "src":"images/projects/PT24003_DAN_kaleidoFlower/FEATURED_STILL_1920_SHOT_020.1090.webp"
-},
-{
     "name":"FEATURED_STILL_1920_01_wall_v006.webp",
     "project":"PT23007_BEMO_hologramInstallation",
     "title":"HOLOGRAM INSTALLATION CONTENT",
